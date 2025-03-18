@@ -26,7 +26,7 @@ function register(event) {
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             alert("Usuário registrado com sucesso!");
-            window.location.href = "login.html";
+            window.location.href = "index.html";
             console.log("Usuário criado:", userCredential.user);
             errorMessage.style.display = "none";
             document.getElementById("registerForm").reset();
