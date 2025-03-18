@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         console.log('Usuário logado:', userCredential.user);
         alert('Login bem-sucedido!');
-        window.location.href = "index.html";
+        window.location.href = "cadastroP.html";
     } catch (error) {
         const errorMessage = error.message;
         document.getElementById('errorMessage').textContent = errorMessage;
